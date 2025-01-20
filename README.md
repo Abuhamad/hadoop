@@ -67,9 +67,9 @@ The deployment creates a complete Hadoop ecosystem with:
 - 1 HistoryServer: Tracks completed applications
 
 #### Key Web UIs (after deployment)
-- NameNode: http://localhost:9870
-- ResourceManager: http://<DockerIP>:8088
-- HistoryServer: http://localhost:19888
+- NameNode: http://DockerIP:9870
+- ResourceManager: http://DockerIP:8088
+- HistoryServer: http://DockerIP:19888
 
 #### Notes
 - Initial startup takes 1-2 minutes for all services to be ready
