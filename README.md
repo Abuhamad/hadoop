@@ -10,7 +10,7 @@
 Follow these steps to install Docker Desktop:
 
 1. Download Docker Desktop:
-  -- Go to [Docker.com](https://www.docker.com/) and choose the right version for your computer.
+  - - Go to [Docker.com](https://www.docker.com/) and choose the right version for your computer.
 
 
 2. Run the installer and follow the installation wizard
