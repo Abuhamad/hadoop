@@ -160,6 +160,29 @@ Common MapReduce examples included in Hadoop:
 
 
 
+### Stop and Start the Hadoop Cluster
+
+To temporarily stop the cluster without removing containers:
+
+```bash
+docker-compose stop
+```
+
+This command will:
+- Stop all running containers
+- Preserve container data and configuration
+
+To restart the stopped containers:
+
+```bash
+docker-compose start
+```
+
+This command will:
+- Start all previously stopped containers
+- Maintain existing data and configuration
+
+
 ### Shut Down the Hadoop Cluster
 
 When you're done using the cluster, shut it down to free up system resources:
