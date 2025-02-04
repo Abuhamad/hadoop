@@ -126,40 +126,6 @@ The -d flag runs containers in detached mode (background). Remove it to see logs
 
 
 
-
-
-### Running MapReduce Jobs
-
-To run other MapReduce jobs, follow this pattern:
-
-1. Copy your JAR file to the namenode:
-```bash
-docker cp ./your-mapreduce.jar namenode:/your-mapreduce.jar
-```
-
-2. Access the namenode container:
-```bash
-docker exec -it namenode bash
-```
-
-3. Run your MapReduce job:
-```bash
-hadoop jar your-mapreduce.jar MainClass input_path output_path
-```
-
-4. View results:
-```bash
-hadoop fs -cat output_path/part-r-00000
-```
-
-Common MapReduce examples included in Hadoop:
-- wordcount: Counts word occurrences
-- pi: Calculates pi using map-reduce
-- terasort: Sorts data at terabyte scale
-
-
-
-
 ### Stop and Start the Hadoop Cluster
 
 To temporarily stop the cluster without removing containers:
@@ -237,7 +203,14 @@ This command will:
 - Remove all images used by any service
 
 
+
+
+
 ---
+
+
+
+
 
 ## MapReduce Jobs
 
